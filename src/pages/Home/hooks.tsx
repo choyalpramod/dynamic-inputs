@@ -45,7 +45,6 @@ export const useFormLogic = ({
   const navigate = useNavigate()
   const { steps, logic } = dynamicInput.data
   const onFormSubmit = (data: Record<string, string>) => {
-    console.log("onFormSubmit ", data)
     setFieldsValue((field) => ({
       ...field,
       ...data,

@@ -29,7 +29,6 @@ export const Form = (props: Props) => {
     resolver: yupResolver(validationSchema),
     defaultValues: { ...initialValues },
   })
-  console.log(initialValues)
 
   const createInputs = () =>
     fields.map((field) => {
