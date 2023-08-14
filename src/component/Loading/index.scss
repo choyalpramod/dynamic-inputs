@@ -1,0 +1,39 @@
+@import "../../styles/variable.scss";
+
+.loader-spinner-container,
+.loader-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.loader-container {
+  background-color: $tertiary-light;
+  opacity: 0.8;
+}
+.loader-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid $tertiary-dark;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

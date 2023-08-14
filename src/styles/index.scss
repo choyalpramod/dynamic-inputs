@@ -1,0 +1,18 @@
+@import "./variable.scss";
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: $secondary-light;
+  font-family: sans-serif;
+  color: $text-100;
+}
+
+.error-messsage {
+  display: flex;
+  width: 100%;
+}
+.error-messsage__error {
+  color: $tertiary-dark;
+  font-size: 12px;
+}

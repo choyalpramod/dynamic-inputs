@@ -1,0 +1,25 @@
+@import "../../styles/variable.scss";
+
+.input-text {
+  margin-bottom: 1rem;
+}
+.input-text__label {
+  display: flex;
+}
+.input-text__input {
+  margin-top: 0.5rem;
+  height: 2rem;
+  box-shadow: none;
+  border: 1px solid $secondary-standard;
+  border-radius: 0.25rem;
+  width: 100%;
+  max-width: 20rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: $max-mobile-viewport) {
+  .input-text__input {
+    max-width: initial;
+    width: 100%;
+  }
+}
